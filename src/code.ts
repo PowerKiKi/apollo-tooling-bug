@@ -1,10 +1,18 @@
 import gql from 'graphql-tag';
 
-const query = gql`
-    query Test {
-        foo(bar: 123) {
+const query1 = gql`
+    query Test($bar: Int) {
+        foo(bar: $bar) {
             login
             email
+        }
+    }
+`;
+
+const query2 = gql`
+    query Second($bar: Int) {
+        foo(bar: $bar) {
+            login
         }
     }
 `;

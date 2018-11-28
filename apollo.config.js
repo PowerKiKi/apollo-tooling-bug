@@ -1,6 +1,8 @@
 module.exports = {
     client: {
-        service: 'my-test-service',
-        localSchemaFile: './src/schema.graphql',
-    },
-};
+        service: {
+            name: 'my-test-service',
+            localSchemaFile: './schema.graphql',
+        }
+    }
+}

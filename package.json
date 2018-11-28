@@ -1,7 +1,7 @@
 {
   "license": "MIT",
   "scripts": {
-    "codegen": "apollo client:codegen -c apollo.config.js  --outputFlat --target typescript src"
+    "codegen": "apollo client:codegen -c apollo.config.js  --outputFlat --target typescript src/generated_types.ts"
   },
   "dependencies": {
     "apollo": "^2.1.6"
